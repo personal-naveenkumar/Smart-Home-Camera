@@ -1,0 +1,24 @@
+{
+  "name": "web-tier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-web-server": "node ./webserver.js",
+    "start": "npm-run-all -p -r start-web-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1077.0",
+    "express": "^4.17.3",
+    "multer": "^1.4.4",
+    "sqs-consumer": "^5.6.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
